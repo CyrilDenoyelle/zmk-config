@@ -14,7 +14,7 @@
         gamingtoggle {
             bindings = <&tog 3>;
             key-positions = <30 18>;
-            layers = <2>;
+            layers = <2 3>;
             require-prior-idle-ms = <0>;
         };
     };
