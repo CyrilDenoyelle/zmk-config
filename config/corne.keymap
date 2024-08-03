@@ -45,9 +45,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1          &kp N2          &kp N3           &kp N4          &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC
+&trans  &kp N1          &kp N2          &kp N3           &kp N4          &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp BSPC
 &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp FSLH        &kp EQUAL       &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACE  &kp RALT        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACE  &kp RALT        &trans  &trans  &trans  &trans  &trans    &trans
                                         &trans           &trans          &kp LEFT_WIN    &trans  &trans  &trans
             >;
         };
@@ -60,10 +60,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MULTIPLY
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &trans
-                        &trans  &trans  &trans    &trans  &trans           &kp KP_NUMBER_0
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_NUM  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MULTIPLY
+&trans  &trans  &trans  &trans  &trans  &trans    &kp BSPC    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &kp KP_DOT
+                        &trans  &trans  &trans    &trans      &trans           &kp KP_NUMBER_0
             >;
         };
 
@@ -78,8 +78,8 @@
 
         gaming2 {
             bindings = <
-&trans  &kp N1  &trans  &kp N2        &kp N3  &kp N4    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &trans  &kp N2        &kp N3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &kp N4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N5  &kp N6  &kp N7        &kp N8  &kp N9    &trans  &trans  &trans  &trans  &trans  &trans
                         &kp LEFT_WIN  &trans  &trans    &trans  &trans  &trans
             >;
