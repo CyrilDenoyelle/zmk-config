@@ -13,7 +13,7 @@
 
         gamingtoggle {
             bindings = <&tog 3>;
-            key-positions = <30 18>;
+            key-positions = <30 18 6>;
             layers = <2 3>;
             require-prior-idle-ms = <0>;
         };
@@ -45,10 +45,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1          &kp N2          &kp N3           &kp N4            &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp BSPC
-&trans  &kp HOME        &kp UP_ARROW    &kp END          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACE    &kp BACKSLASH           &trans  &trans  &trans  &trans  &trans    &trans
-                                        &kp LEFT_WIN     &trans            &trans                  &trans  &trans  &trans
+&trans  &kp N1          &kp N2          &kp N3           &kp N4          &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC
+&trans  &kp HOME        &kp UP_ARROW    &kp END          &kp FSLH        &kp EQUAL       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACE  &kp RALT        &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans           &trans          &kp LEFT_WIN    &trans  &trans  &trans
             >;
         };
 
