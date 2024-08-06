@@ -40,9 +40,9 @@
 
         topbar {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4          &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans
-&trans   &trans  &trans  &trans  &trans          &trans           &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT
-&trans   &trans  &trans  &trans  &bt BT_CLR_ALL  &kp RIGHT_ALT    &trans  &trans  &trans  &trans  &trans    &bt BT_CLR_ALL
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4          &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0      &trans
+&trans   &trans  &trans  &trans  &trans          &trans           &trans  &trans  &trans  &trans  &kp LBKT    &kp RBKT
+&trans   &trans  &trans  &trans  &bt BT_CLR_ALL  &kp RIGHT_ALT    &trans  &trans  &trans  &trans  &bt BT_NXT  &bt BT_CLR_ALL
                          &trans  &sl 2           &trans           &trans  &trans  &trans
             >;
         };
