@@ -24,6 +24,30 @@
             key-positions = <26 27 28>;
             layers = <1>;
         };
+
+        profil0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <32 33>;
+            layers = <1>;
+        };
+
+        profil1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <34 33>;
+            layers = <1>;
+        };
+
+        resetprofile {
+            bindings = <&bt BT_CLR>;
+            key-positions = <35 23>;
+            layers = <1>;
+        };
+
+        profil2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <34 35>;
+            layers = <1>;
+        };
     };
 
     keymap {
