@@ -70,10 +70,10 @@
 
         topbar {
             bindings = <
-&kp ESC  &kp N1                &kp N2  &kp N3    &kp N4                &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0      &trans
-&trans   &trans                &trans  &trans    &kp NON_US_BACKSLASH  &kp EQUAL        &trans  &trans  &trans  &trans  &kp LBKT    &kp RBKT
-&trans   &kp NON_US_BACKSLASH  &trans  &trans    &trans                &kp RIGHT_ALT    &trans  &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT
-                                       &kp LGUI  &trans                &kp RET          &trans  &trans  &trans
+&kp ESC  &kp N1                &kp N2  &kp N3     &kp N4                &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0      &trans
+&trans   &trans                &trans  &kp MINUS  &kp NON_US_BACKSLASH  &kp EQUAL        &trans  &trans  &trans  &trans  &kp LBKT    &kp RBKT
+&trans   &kp NON_US_BACKSLASH  &trans  &trans     &trans                &kp RIGHT_ALT    &trans  &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT
+                                       &kp LGUI   &trans                &kp RET          &trans  &trans  &trans
             >;
         };
 
@@ -88,7 +88,7 @@
 
         gaming2 {
             bindings = <
-&kp ESC  &kp N1  &trans  &kp N3        &kp N4  &kp I        &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp C_PAUSE
+&kp ESC  &kp N1  &trans  &kp N3        &kp N4  &kp I        &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp PAUSE_BREAK
 &trans   &trans  &trans  &trans        &kp N2  &kp J        &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &kp N5  &kp N6  &kp N         &kp M   &kp COMMA    &trans  &trans  &trans  &trans  &trans  &trans
                          &kp LEFT_WIN  &trans  &trans       &trans  &trans  &trans
