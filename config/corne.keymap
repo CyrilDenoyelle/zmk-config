@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -46,6 +47,13 @@
         profil2 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <34 35>;
+            layers = <1>;
+        };
+
+        ext_pow {
+            bindings = <&ext_power EP_TOG>;
+            key-positions = <24 25 26>;
+            timeout-ms = <0>;
             layers = <1>;
         };
     };
