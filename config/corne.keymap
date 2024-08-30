@@ -78,10 +78,10 @@
 
         topbar {
             bindings = <
-&kp ESC  &kp N1                &kp N2  &kp N3     &kp N4                &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0      &trans
-&trans   &trans                &trans  &kp MINUS  &kp NON_US_BACKSLASH  &kp EQUAL        &trans  &trans  &trans  &trans  &kp LBKT    &kp RBKT
-&trans   &kp NON_US_BACKSLASH  &trans  &trans     &trans                &kp RIGHT_ALT    &trans  &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT
-                                       &kp LGUI   &trans                &kp RET          &trans  &trans  &trans
+&kp ESC  &kp N1                    &kp N2     &kp N3         &kp N4         &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0      &trans
+&trans   &kp NON_US_BACKSLASH      &kp N5     &kp LA(N5)     &kp LA(N4)     &kp EQUAL        &trans  &trans  &trans  &trans  &kp LBKT    &kp RBKT
+&trans   &kp LS(NON_US_BACKSLASH)  &kp MINUS  &kp LA(MINUS)  &kp LA(EQUAL)  &kp RIGHT_ALT    &trans  &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT
+                                              &kp LGUI       &trans         &kp RET          &trans  &trans  &trans
             >;
         };
 
