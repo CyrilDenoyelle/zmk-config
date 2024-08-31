@@ -20,12 +20,6 @@
             require-prior-idle-ms = <0>;
         };
 
-        btclear {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <26 27 28>;
-            layers = <1>;
-        };
-
         profil0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <32 33>;
