@@ -16,9 +16,9 @@
         compatible = "zmk,combos";
 
         gamingtoggle {
-            bindings = <&tog 6>;
+            bindings = <&tog 5>;
             key-positions = <25 26 27>;
-            layers = <0 6>;
+            layers = <0 5>;
             require-prior-idle-ms = <0>;
         };
 
