@@ -84,7 +84,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCEB";
             #binding-cells = <0>;
-            bindings = <&kp B>, <&mo 3>;
+            bindings = <&kp B>, <&mo 4>;
 
             tapping-term-ms = <125>;
         };
