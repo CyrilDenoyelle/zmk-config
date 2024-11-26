@@ -9,8 +9,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
-&lt { tapping-term-ms = <250>; };
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -63,6 +61,35 @@
         };
     };
 
+    behaviors {
+        tapdanceT: tapdanceT {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCET";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&mo 2>;
+
+            tapping-term-ms = <100>;
+        };
+
+        tapdanceG: tapdanceG {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCEG";
+            #binding-cells = <0>;
+            bindings = <&kp G>, <&mo 3>;
+
+            tapping-term-ms = <100>;
+        };
+
+        tapdanceB: tapdanceB {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCEB";
+            #binding-cells = <0>;
+            bindings = <&kp B>, <&mo 3>;
+
+            tapping-term-ms = <100>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -74,10 +101,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &lt 2 T      &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &lt 3 G      &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &lt 4 B      &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
-                              &kp LEFT_ALT  &mo 1  &kp SPACE    &kp RET  &mo 7  &kp RALT
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &tapdanceT    &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &tapdanceG    &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &tapdanceB    &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
+                              &kp LEFT_ALT  &mo 1  &kp SPACE     &kp RET  &mo 7  &kp RALT
             >;
         };
 
