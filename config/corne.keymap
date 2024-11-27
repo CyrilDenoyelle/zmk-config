@@ -67,6 +67,8 @@
             label = "TAPDANCET";
             #binding-cells = <0>;
             bindings = <&kp T>, <&mo 2>;
+
+            tapping-term-ms = <140>;
         };
 
         tapdanceG: tapdanceG {
@@ -74,6 +76,8 @@
             label = "TAPDANCEG";
             #binding-cells = <0>;
             bindings = <&kp G>, <&mo 3>;
+
+            tapping-term-ms = <140>;
         };
 
         tapdanceB: tapdanceB {
@@ -81,6 +85,8 @@
             label = "TAPDANCEB";
             #binding-cells = <0>;
             bindings = <&kp B>, <&mo 4>;
+
+            tapping-term-ms = <140>;
         };
     };
 
