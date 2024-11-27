@@ -59,6 +59,27 @@
             bindings = <&kp RA(N7) &kp SPACE>;
             label = "BACK_COTE";
         };
+
+        tt: tt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp T>;
+            label = "TT";
+        };
+
+        gg: gg {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp G>;
+            label = "GG";
+        };
+
+        bb: bb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp B>;
+            label = "BB";
+        };
     };
 
     behaviors {
@@ -66,27 +87,54 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCET";
             #binding-cells = <0>;
-            bindings = <&kp T>, <&mo 2>;
+            bindings = <&kp T>, <&mo_tt 2 0>;
 
-            tapping-term-ms = <140>;
+            tapping-term-ms = <150>;
         };
 
         tapdanceG: tapdanceG {
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCEG";
             #binding-cells = <0>;
-            bindings = <&kp G>, <&mo 3>;
+            bindings = <&kp G>, <&mo_gg 3 0>;
 
-            tapping-term-ms = <140>;
+            tapping-term-ms = <150>;
         };
 
         tapdanceB: tapdanceB {
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCEB";
             #binding-cells = <0>;
-            bindings = <&kp B>, <&mo 4>;
+            bindings = <&kp B>, <&mo_bb 4 0>;
 
-            tapping-term-ms = <140>;
+            tapping-term-ms = <150>;
+        };
+
+        mo_tt: mo_tt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_TT";
+            bindings = <&mo>, <&tt>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+        };
+
+        mo_gg: mo_gg {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_GG";
+            bindings = <&mo>, <&gg>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+        };
+
+        mo_bb: mo_bb {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_BB";
+            bindings = <&mo>, <&bb>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
         };
     };
 
