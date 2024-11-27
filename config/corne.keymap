@@ -89,7 +89,7 @@
             #binding-cells = <0>;
             bindings = <&kp T>, <&mo_tt 2 0>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <140>;
         };
 
         tapdanceG: tapdanceG {
@@ -98,7 +98,7 @@
             #binding-cells = <0>;
             bindings = <&kp G>, <&mo_gg 3 0>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <140>;
         };
 
         tapdanceB: tapdanceB {
@@ -107,7 +107,7 @@
             #binding-cells = <0>;
             bindings = <&kp B>, <&mo_bb 4 0>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <140>;
         };
 
         mo_tt: mo_tt {
@@ -117,6 +117,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <175>;
+            flavor = "balanced";
         };
 
         mo_gg: mo_gg {
@@ -126,6 +127,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <175>;
+            flavor = "balanced";
         };
 
         mo_bb: mo_bb {
@@ -135,6 +137,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <175>;
+            flavor = "balanced";
         };
     };
 
