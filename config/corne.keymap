@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
+&lt { require-prior-idle-ms = <200>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -59,86 +61,6 @@
             bindings = <&kp RA(N7) &kp SPACE>;
             label = "BACK_COTE";
         };
-
-        tt: tt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp T>;
-            label = "TT";
-        };
-
-        gg: gg {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp G &kp G>;
-            label = "GG";
-        };
-
-        bb: bb {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp B &kp B>;
-            label = "BB";
-        };
-    };
-
-    behaviors {
-        tapdanceT: tapdanceT {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCET";
-            #binding-cells = <0>;
-            bindings = <&kp T>, <&mo_tt 2 0>;
-
-            tapping-term-ms = <140>;
-        };
-
-        tapdanceG: tapdanceG {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCEG";
-            #binding-cells = <0>;
-            bindings = <&kp G>, <&mo_gg 3 0>;
-
-            tapping-term-ms = <140>;
-        };
-
-        tapdanceB: tapdanceB {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCEB";
-            #binding-cells = <0>;
-            bindings = <&kp B>, <&mo_bb 4 0>;
-
-            tapping-term-ms = <140>;
-        };
-
-        mo_tt: mo_tt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MO_TT";
-            bindings = <&mo>, <&tt>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            flavor = "balanced";
-        };
-
-        mo_gg: mo_gg {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MO_GG";
-            bindings = <&mo>, <&gg>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            flavor = "balanced";
-        };
-
-        mo_bb: mo_bb {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MO_BB";
-            bindings = <&mo>, <&bb>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            flavor = "balanced";
-        };
     };
 
     keymap {
@@ -152,10 +74,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &tapdanceT    &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &tapdanceG    &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &tapdanceB    &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
-                              &kp LEFT_ALT  &mo 1  &kp SPACE     &kp RET  &mo 7  &kp RALT
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &lt 2 T      &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &lt 3 G      &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &lt 4 B      &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
+                              &kp LEFT_ALT  &mo 1  &kp SPACE    &kp RET  &mo 7  &kp RALT
             >;
         };
 
